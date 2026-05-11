@@ -303,16 +303,43 @@
 
     <!-- Contact -->
     <section class="contact" id="contact">
-        <h2 class="section-title">Contact Me</h2>
+    <h2 class="section-title">Contact Me</h2>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        </section>
+    <form action="https://formsubmit.co/kowshikrayavarapu18@gmail.com" method="POST" class="contact-form">
 
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Redirect After Submit -->
+        <input type="hidden" name="_next" value="https://kowshik-portfolio.vercel.app">
+
+        <input 
+            type="text" 
+            name="name" 
+            placeholder="Your Name" 
+            required
+        >
+
+        <input 
+            type="email" 
+            name="email" 
+            placeholder="Your Email" 
+            required
+        >
+
+        <textarea 
+            name="message" 
+            rows="6" 
+            placeholder="Your Message" 
+            required
+        ></textarea>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+
+    </form>
+</section>
     <!-- Footer -->
     <footer>
         <p>© 2026 Rayavarapu Kowshik | All Rights Reserved</p>

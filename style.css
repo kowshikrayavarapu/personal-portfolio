@@ -337,6 +337,13 @@ section{
 .contact-form button{
     cursor:pointer;
 }
+.contact-form input,
+.contact-form textarea{
+    color: #000;
+}.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #666;
+}
 .btn-outline{
     border:2px solid #f97316;
     color:#111827;
